@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <HediffDef>
+  <defName>DMS_CloakActiveHediff</defName>
+  <hediffClass>HediffWithComps</hediffClass>
+  <label>Active Camouflage</label>
+  <description>It's time to peek into the women's changing room.</description> <!--I know, it's very funny, isn't it?--> 
+  <defaultLabelColor>(0.5, 0.9, 1.0)</defaultLabelColor>
+  <isBad>false</isBad>
+  <scenarioCanAdd>false</scenarioCanAdd>
+  <comps>
+    <li Class="HediffCompProperties_Invisibility" />
+    <li Class="HediffCompProperties_Disappears">
+      <disappearsAfterTicks>
+        <min>3500</min>
+        <max>3500</max>
+      </disappearsAfterTicks>
+      <showRemainingTime>true</showRemainingTime>
+    </li>
+  </comps>
+</HediffDef>
+
+  <VEF.Abilities.AbilityDef>
+    <defName>DMS_Ability_TacticalCloak</defName>
+    <label>Acive Camouflage</label>
+    <description>Grants an Invisibility for a 1 hour</description>
+    <iconPath>Things/Apparel/MagierCloak/icon</iconPath>
+    <abilityClass>VEF.Abilities.Ability_Blank</abilityClass>
+    <cooldownTime>7500</cooldownTime>
+    <durationTime>3500</durationTime>
+    <modExtensions>
+      <li Class="VEF.Abilities.AbilityExtension_Hediff">
+        <hediff>DMS_CloakActiveHediff</hediff>
+        <applyToCaster>true</applyToCaster>
+        <applyAuto>true</applyAuto>
+        <severity>1</severity>
+      </li>
+    </modExtensions>
+  </VEF.Abilities.AbilityDef>
+
+</Defs>

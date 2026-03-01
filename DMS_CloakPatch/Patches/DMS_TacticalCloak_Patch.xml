@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="DMS_Apparel_TacticalCloak"][not(comps)]</xpath>
+        <value>
+          <comps />
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="DMS_Apparel_TacticalCloak"]/comps</xpath>
+        <value>
+          <li Class="VEF.Abilities.CompProperties_AbilitiesApparel">
+            <abilities>
+              <li>DMS_Ability_TacticalCloak</li>
+            </abilities>
+          </li>
+        </value>
+      </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="DMS_Apparel_TacticalCloak"]/costStuffCount</xpath>
+        <value>
+          <costStuffCount>40</costStuffCount>
+        </value>
+      </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="DMS_Apparel_TacticalCloak"]/costList</xpath>
+        <value>
+          <costList>
+            <Plasfiber>50</Plasfiber>
+            <ComponentSpacer>4</ComponentSpacer>
+            <Plasteel>10</Plasteel>
+            <Gold>1.5</Gold> 
+          </costList>
+        </value>
+      </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="DMS_Apparel_TacticalCloak"]/recipeMaker</xpath>
+        <value>
+          <recipeMaker>
+            <researchPrerequisites>
+              <li>MultiAnalyzer</li>
+            </researchPrerequisites>
+            <skillRequirements>
+              <Crafting>8</Crafting>
+            </skillRequirements>
+          </recipeMaker>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="DMS_Apparel_TacticalCloak"]/statBases</xpath>
+        <value>
+          <MarketValue>3000</MarketValue>
+        </value>
+      </li>
+
+    </operations>
+  </Operation>
+</Patch>

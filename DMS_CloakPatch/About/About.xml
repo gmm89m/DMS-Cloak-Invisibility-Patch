@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>DMS Cloak Pacth</name>
+  <author>gmm89m aka uebishe</author>
+  <packageId>gmm89m.DMSCloak.Pacth</packageId>
+  <supportedVersions>
+    <li>1.5</li>
+    <li>1.6</li>
+  </supportedVersions> 
+  <modDependencies>
+		<li>
+			<packageId>Ludeon.RimWorld.Royalty</packageId>
+			<displayName>Royalty</displayName>
+		</li>
+		<li>
+			<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
+			<displayName>Vanilla Expanded Framework</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1854607105</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>Aoba.DeadManSwitch.Core</packageId>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3121742525</steamWorkshopUrl>
+			<displayName>Dead Man Switch</displayName>
+		</li>
+	</modDependencies>
+<loadAfter>
+  <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+  <li>Aoba.DeadManSwitch.Core</li>
+</loadAfter>
+  <description>
+    Gives an invisibility ability to a stealth cloak
+  </description>
+</ModMetaData>
