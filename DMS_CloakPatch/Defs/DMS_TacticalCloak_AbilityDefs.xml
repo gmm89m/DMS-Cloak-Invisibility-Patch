@@ -33,10 +33,11 @@
       <li Class="VEF.Abilities.AbilityExtension_Hediff">
         <hediff>DMS_CloakActiveHediff</hediff>
         <applyToCaster>true</applyToCaster>
-        <applyAuto>true</applyAuto>
+        <applyAuto>true</applyAuto> <!--Unfortuantelly it doesn't works-->
         <severity>1</severity>
       </li>
     </modExtensions>
   </VEF.Abilities.AbilityDef>
+
 
 </Defs>
