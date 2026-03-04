@@ -1,5 +1,5 @@
 # DMS-Cloak-Invisibility-Patch
-Gives an invisibility ability to a stealth cloak, makes it more expensive and difficult to obtain in order to balance (it's kind of op anyway)
+This patch adds a functional active camouflage invisibility ability to the Tactical Cloak from the Dead Man's Switch (DMS) mod. Fixes the issue where the cloak was only flavor text.
 
 ## To do list
 1. Adding consumable requirement for activation
